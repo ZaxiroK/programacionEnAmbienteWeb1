@@ -1,0 +1,13 @@
+ <?php
+
+//var_dump($argv);
+//die;
+
+$country = $argv[1];
+
+$cities = [
+"costarica" => ['Alajuela','San Jose','Heredia',],
+"nicaragua; => ['Managua', 'Leon']
+];
+
+print_r($cities[$country]);

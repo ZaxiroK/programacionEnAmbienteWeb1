@@ -1,0 +1,19 @@
+body {
+    font-family: 'Raleway';
+    font-size: 16px;
+    font-weight: 300;
+    color: #fff;
+    line-height: 30px;
+    text-align: center;
+    background-image: url(world.jpg)
+}
+
+div {
+  
+    height: 690px;
+    width: 1590px;
+    text-align: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+}
