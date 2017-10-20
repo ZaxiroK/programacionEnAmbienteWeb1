@@ -1,0 +1,5 @@
+cd..
+cd..
+cd xampp
+cd php
+php url.php parametros en caso de que lleve
