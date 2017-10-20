@@ -5,38 +5,38 @@ $arregloBajas= array();
 $arregloAltas= array();
 $contadorBajas = 0;
 $contadorAltas = 0;
+$bajas;
+$altas;
 
 $promedio = array_sum($arregloTemperaturas)/count($arregloTemperaturas);
  
 
+sort($arregloTemperaturas);
+    foreach($arregloTemperaturas as $value){
+        if($contadorBajas!=5){
+            array_push($arregloBajas, $value);
+            
+            $contadorBajas=$contadorBajas+1;
+
+    } 
+}
+
 arsort($arregloTemperaturas);
-//necesito saber como hacer un punto lenght para la comparacion
-foreach($arregloTemperaturas as $value){
+
+    foreach($arregloTemperaturas as $value){
     if($contadorAltas!=5){
-        //como meter un valor a un arreglo .push?
-            $arregloAltas = $value;
-        
-        
-        $contadorAltas=$contadorAltas+1;
-    }
-}
-
-asort($arregloTemperaturas);
-foreach($arregloTemperaturas as $value ){
-if($contadorBajas!=5){
-
     
-        $arregloBajas = $value;
+        array_push($arregloAltas, $value);
     
-    $contadorBajas=$contadorBajas+1;
-
+    
+    $contadorAltas=$contadorAltas+1;
 }
-
 }
+echo "Temperaturas altas:";
+print_r($arregloAltas);
+echo "Temperaturas bajas:";
+print_r($arregloBajas);
 
-
-echo "Temperaturas altas: $arregloAltas \n";
-echo "Temperaturas altas: $arregloBajas \n";
+//echo "Temperaturas altas: $arregloAltas \n";
+//echo "Temperaturas bajas: $arregloBajas  \n";
 echo "Promedio: $promedio";
-
-?> 
