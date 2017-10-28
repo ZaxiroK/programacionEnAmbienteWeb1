@@ -28,7 +28,8 @@
     <div class="msg">
       <?php echo $message; ?>
     </div>
-    <form action="/utn/pages/signup.php" method="POST" class="form-inline" role="form">
+    <!--/programacionEnAmbienteWeb1/formularioPhp/classPerson.php-->
+    <form action="persona::insert();" method="POST" class="form-inline" role="form">
       <div class="form-group">
         <label class="sr-only" for="">Username</label>
         <input type="text" class="form-control" id="" name="username" placeholder="Your username">
@@ -42,7 +43,7 @@
         <input type="text" class="form-control" id="" name="lastname" placeholder="Your LastName">
       </div>
 
-      <button type="submit" class="btn btn-primary">Submit</button>
+      <button type="submit"  class="btn btn-primary">Submit</button>
     </form>
 </div>
 
